@@ -5,7 +5,7 @@ body {
 /* Navigation Bar */
 
 #home {
-  background-color: #7600bc;
+  background-color: rgb(85, 85, 230);
   padding-bottom: 1cm;
   margin-left: -1cm;
   margin-right: -1cm;
@@ -63,6 +63,68 @@ body {
   float: left;
 }
 
+.menu-btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 2rem;
+  height: 2rem;
+  float: right;
+  padding-right: 40px;
+  /* align-items: flex-end; */
+  display: none;
+}
+
+.menu-btn span{
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+#side-drawer{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(29,26,27);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#side-drawer header{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* padding: 15px 60px; */
+  padding: 0.85rem 3.3rem;
+  position: absolute;
+  /* position: absolute; */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#side-drawer:target{
+  display: block;
+}
+
+#side-drawer ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 4rem 1rem;
+}
+
+#side-drawer li{
+  margin: 1rem 0;
+}
+
+#side-drawer a{
+  color: rgb(253, 239, 213);
+  font-size: 2rem;
+}
+
 /* Titles */
 
 h2 {
@@ -70,7 +132,7 @@ h2 {
   font-size: 50px;
   text-align: center;
   float: left;
-  color: #7600bc;
+  color: rgb(85, 85, 230);
   margin: 30px;
   margin-left: 60px;
   margin-top: 40px;
@@ -108,7 +170,7 @@ h2 {
 #about-me h1 {
   font-size: 65px;
   margin-top: 90px;
-  color: #7600bc;
+  color: rgb(85, 85, 230);
 }
 
 #about-me p {
@@ -301,7 +363,7 @@ h2 {
 }
 
 .recommendation span {
-  color: #7600bc;
+  color: rgb(85, 85, 230);
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -312,7 +374,7 @@ h2 {
   width: 48px;
   height: 48px;
   border-radius: 100%;
-  background-color: #7600bc;
+  background-color: rgb(85, 85, 230);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -326,7 +388,7 @@ h2 {
 
 .popup {
   width: 400px;
-  background-color: #e8bcf0;
+  background-color: rgb(173, 173, 248);
   border-radius: 3mm;
   top: 50%;
   left: 50%;
@@ -343,8 +405,8 @@ h2 {
 
 .popup button {
   background-color: #fff;
-  border: 1px solid #7600bc;
-  color: #7600bc;
+  border: 1px solid rgb(85, 85, 230);
+  color: rgb(85, 85, 230);
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -357,8 +419,8 @@ h2 {
 
 .popup button:hover {
   background-color: #fff;
-  border: 2px solid #7600bc;
-  color: #7600bc;
+  border: 2px solid rgb(85, 85, 230);
+  color: rgb(85, 85, 230);
   display: block;
   font-weight: bolder;
   text-align: center;
@@ -390,8 +452,8 @@ fieldset {
 
 button {
   background-color: #fff;
-  border: 1px solid #7600bc;
-  color: #7600bc;
+  border: 1px solid rgb(85, 85, 230);
+  color: rgb(85, 85, 230);
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -402,11 +464,21 @@ button {
 }
 
 button:hover {
-  background-color: #7600bc;
-  border: 1px solid #7600bc;
+  background-color: rgb(85, 85, 230);
+  border: 1px solid rgb(85, 85, 230);
   color: #fff;
   display: block;
   border-radius: 6px;
   text-align: center;
   cursor: pointer;
+}
+
+
+@media (max-width:1024px){
+  .topdiv{
+      display: none;
+  }
+  .menu-btn{
+      display: flex;
+  }
 }
