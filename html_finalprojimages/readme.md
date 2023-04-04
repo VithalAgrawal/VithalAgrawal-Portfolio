@@ -1,1 +1,1 @@
-Welcome to my web-based portfolio!
+This directory has all the images used in the portfolio.
