@@ -51,7 +51,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: row;
-  width: 50%;
+  /* width: 100%; */
 }
 
 .profile_name a {
@@ -66,12 +66,11 @@ body {
 }
 
 #contacts-with-link{
-  /* display: inline; */
   display: flex;
-  /* padding-right: 1rem; */
-  /* margin-right: 2rem; */
-  /* justify-content: space-evenly; */
-  /* grid-template-columns: 1fr 1fr; */
+}
+
+#github img{
+  padding-left: 1rem;
 }
 
 .menu-btn{
