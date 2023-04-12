@@ -194,6 +194,7 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
+  margin-left: 50px;
 }
 
 
@@ -269,7 +270,7 @@ h2 {
 
 .projects-container {
   margin-top: 30px;
-  margin-left: 60px;
+  margin-left: 30px;
 }
 
 .projects-container hr {
@@ -293,8 +294,16 @@ h2 {
   margin-left: 30px;
 }
 
+.projects a, .projects h3 {
+  text-decoration: none ;
+  color: #000;
+  display: inline;
+}
 
-
+.projects img{
+  /* display: inline; */
+  width: 1.5rem;
+}
 
 
 
@@ -304,6 +313,7 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
+  margin-left: 50px;
 }
 
 .certificate {
@@ -475,11 +485,59 @@ button:hover {
 }
 
 
-@media (max-width:1024px){
+/* @media (max-width:1200px){ */
+  /* .topdiv{ */
+    /* width: 100%; */
+      /* display: none; */
+  /* } */
+  /* .menu-btn{ */
+      /* display: flex; */
+  /* } */
+  /* #about-me h1{ */
+    /* margin-top: 3rem; */
+    /* padding-bottom: 1rem; */
+    /* font-size: 2.5rem; */
+  /* } */
+  /* #about-me p{ */
+    /* font-size: 1.75rem; */
+  /* } */
+/* } */
+
+
+@media(max-width:1024px){
   .topdiv{
       display: none;
   }
   .menu-btn{
       display: flex;
+  }
+  #about-me h1{
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  #about-me p{
+    font-size: 0.7rem;
+    /* font-size: 100%; */
+  }
+  .all_skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+  }
+  .education{
+    margin: auto;
+    font-size: large;
+  }
+  .projects h3{
+    font-size: 0.75rem;
+  }
+  .projects li{
+    font-size: 0.6rem;
+  }
+  .all_certificates{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
   }
 }
