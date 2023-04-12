@@ -16,6 +16,7 @@ body {
   width: inherit;
 }
 
+
 .topmenu {
   color: lightgray;
   margin: 5px;
@@ -50,6 +51,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: row;
+  width: 50%;
 }
 
 .profile_name a {
@@ -61,6 +63,15 @@ body {
   width: 25px;
   margin-right: 10px;
   float: left;
+}
+
+#contacts-with-link{
+  /* display: inline; */
+  display: flex;
+  /* padding-right: 1rem; */
+  /* margin-right: 2rem; */
+  /* justify-content: space-evenly; */
+  /* grid-template-columns: 1fr 1fr; */
 }
 
 .menu-btn{
